@@ -35,7 +35,8 @@ def main():
     if 'NUMBA_DISABLE_JIT' in os.environ:
         del os.environ['NUMBA_DISABLE_JIT']
 
-    global args 
+    global args
+    print(sys.argv[1])
     args = cmd_args.parse_args_from_yaml(sys.argv[1])
 
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu if args.multi_gpu is None else '0,1,2,3'
