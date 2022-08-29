@@ -22,7 +22,8 @@ num_points: 8192
 DEVICE: cuda
 
 dataset: FlyingThings3DSubset # FlyingThings3DSubset KITTI
-data_root: ./flyingthings3d
+# data_root: ./flyingthings3d
+data_root: $SLURM_TMPDIR/data/output
 
 data_process:
   DEPTH_THRESHOLD: 35.

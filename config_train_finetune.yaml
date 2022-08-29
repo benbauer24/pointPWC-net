@@ -26,7 +26,8 @@ DEVICE: cuda
 evaluate: False
 
 dataset: FlyingThings3DSubset
-data_root: ./flyingthings3d
+# data_root: ./flyingthings3d
+data_root: $SLURM_TMPDIR/data/output
 
 data_process:
     DEPTH_THRESHOLD: 35.
