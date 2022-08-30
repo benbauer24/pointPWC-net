@@ -3,7 +3,7 @@ multi_gpu: null
 
 model_name: PointConv
 
-full: False
+#full: False     #Getting an error with this argument. Maybe only usefull for Flyingthings
 
 arch: PointConv
 last_relu: False
@@ -25,8 +25,8 @@ DEVICE: cuda
 
 evaluate: False
 
-dataset: FlyingThings3DSubset 
-# data_root: ./flyingthings3d
+dataset: KITTI
+data_root: /media/bedad/DATA/ETS/Recherche/programmation/data/pointPWC-Net/KITTI_DATA
 #data_root: $SLURM_TMPDIR/data/output
 
 data_process:

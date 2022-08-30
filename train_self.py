@@ -72,8 +72,8 @@ def main():
                                             args.data_process,
                                             args.num_points),
         num_points=args.num_points,
-        data_root = args.data_root,
-        full=args.full
+        data_root=args.data_root,
+        #full=args.full    #Getting an error with this argument. Maybe only usefull for Flyingthings
     )
     logger.info('train_dataset: ' + str(train_dataset))
     train_loader = torch.utils.data.DataLoader(

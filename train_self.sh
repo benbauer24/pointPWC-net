@@ -1,0 +1,1 @@
+python train_self.py ./config_train_self.yaml
